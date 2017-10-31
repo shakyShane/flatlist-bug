@@ -47,7 +47,7 @@ export default class App extends Component<{}> {
             )}
             ListFooterComponent={() => (
               <View style={styles.item}>
-                <Text>Viewable Keys: {JSON.stringify(this.state.viewable)}</Text>
+                <Text style={{fontSize: 20}}>Viewable Keys: {this.state.viewable.join(' - ')}</Text>
                 <Button
                   title={`${this.state.showHeader ? 'Remove Header Component' : 'Add Header Component'}`}
                   onPress={() => this.setState({showHeader: !this.state.showHeader})}
