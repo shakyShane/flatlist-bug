@@ -42,7 +42,7 @@ export default class App extends Component<{}> {
             ItemSeparatorComponent={() => <View style={{height: SEPARATOR_HEIGHT}} />}
             ListHeaderComponent={() => this.state.showHeader && (
               <View style={styles.header}>
-                <Text>ListHeaderComponent, Length=100</Text>
+                <Text>ListHeaderComponent, Length={HEADER_LENGTH}</Text>
               </View>
             )}
             ListFooterComponent={() => (

@@ -21,3 +21,5 @@ _selectOffset(metrics: {x: number, y: number}): number {
 +   return (!this.props.horizontal ? metrics.y : metrics.x) - this._headerLength;
 }
 ```
+
+https://snack.expo.io/HJz_uaS0b
